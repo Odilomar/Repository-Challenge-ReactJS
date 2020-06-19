@@ -9,17 +9,16 @@ body {
 }
 
 div {
-  width: z;
-  margin: 20px;
+  width: calc(100% - 2rem);
+  margin: 1rem;
 }
 
 div li {
   display: flex;
   align-items: center;
-}
-
-div li + li {
-  margin-top: 15px;
+  height: 2.7rem;
+  margin-top: 1rem;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 button {
@@ -28,12 +27,27 @@ button {
   border: 0;
   padding: 10px 15px;
   cursor: pointer;
-  margin-top: 15px;
   font-weight: bold;
   font-size: 14px;
+  width: 6rem;
+  position: absolute;
+  right: 2rem;
 }
 
 div li button {
-  margin: 0 15px;
   background: #ca4949;
+}
+
+div ul {
+  margin-top: 1rem;
+  overflow-y: auto;
+}
+
+h2 {
+  display: inline-block;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+header{
+  height: 2.25rem;
 }
